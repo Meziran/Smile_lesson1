@@ -112,10 +112,8 @@ section {
   display: block;
 }
 
-body {
-  /* line-height: 1; */
-
-  font-family: Marvel;
+* body {
+  font-family: Marvel, sans-serif;
   font-weight: bold;
   font-size: 24px;
 }
@@ -169,14 +167,25 @@ button {
 h6[data-prefix="h6"] {
   margin: 0 0 30px 0;
 }
+h6:before {
+  content: attr(data-prefix);
+  font: bold 12px/2 "Hipstelvetica";
+  color: #ff3333;
+}
+h6 {
+  font: bold 18px/2 "Marvel";
+  color: #333333;
+}
+
 /* LINK */
 a {
   height: 29px;
   padding: 0 3px;
+  padding-bottom: 1px;
   text-decoration: none;
   position: relative;
   display: inline-block;
-  padding-bottom: 1px;
+  font: bold 24px/1.25 "Marvel";
   color: #333333;
   transition: color 0.3s, background 0.3s;
 }
@@ -214,15 +223,18 @@ a:after {
 /* INPUT */
 input[type="text"] {
   width: 290px;
-  height: 30px;
+  height: 40px;
   border: none;
   outline: 0;
   /* background-color: red; */
   position: relative;
+  font: bold 24px/1.5 "Marvel";
+  color: #333333;
   border-bottom: 2px solid #363636;
   margin: 30px 0 0 0;
 }
 input[id="form-text-exampl"] {
+  font: bold 24px/1.5 "Marvel";
 }
 /* input:after {
   content: "";
@@ -295,6 +307,11 @@ input[type="radio"]:checked + label:after {
   opacity: 1;
   transition: opacity 0.3s;
 }
+label[type="checkbox"],
+label[type="radio"] {
+  font: bold 24px/1.5 "Marvel";
+  color: #000;
+}
 /* RADIO */
 .check-cont {
   width: 300px;
@@ -331,22 +348,21 @@ input[type="radio"] + label:after {
 /* BUTTON */
 button {
   margin-bottom: 15px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   height: 60px;
   width: 290px;
   border: 2px solid#0000ff;
   color: #0000ff;
   background-color: #ffffff;
-  font-size: 18px;
+  font: bold 18px/1.7 "Marvel";
   text-transform: uppercase;
-  line-height: 1.7;
   text-align: center;
-  ransition: color 0.3s, background 0.3s;
+  transition: color 0.3s, background 0.3s;
 }
 
 button:hover,
 button:focus {
   color: #ffffff;
   background-color: #0000ff;
-  ransition: color 0.3s, background 0.3s;
+  transition: color 0.3s, background 0.3s;
 }
