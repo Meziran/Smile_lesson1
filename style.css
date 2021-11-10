@@ -146,6 +146,34 @@ button {
   outline: 0;
   border: 0;
 }
+
+/* MEDIA */
+@media screen and (max-width: 479px) {
+  .container {
+    width: 320px;
+  }
+  .centr {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 /* FONT */
 @font-face {
   font-family: "Hipstelvetica";
@@ -158,12 +186,19 @@ button {
 .container {
   /* display: flex;
   justify-content: center;
-  align-items: center; */
-  /* display: block; */
+  align-items: center;
+  display: block; */
   margin: 0 auto;
-  max-width: 300px;
+
   padding: 0 15px;
+  border: 1px solid red;
 }
+.centr {
+  display: flex;
+  justify-content: center;
+  /* width: 300px; */
+}
+/* TITLE */
 h6[data-prefix="h6"] {
   margin: 0 0 30px 0;
 }
@@ -314,7 +349,7 @@ label[type="radio"] {
 }
 /* RADIO */
 .check-cont {
-  width: 300px;
+  /* width: 300px; */
   margin: 40px 0 20px 0;
 }
 

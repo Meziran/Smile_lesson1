@@ -13,43 +13,53 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <section class="container">
-    <h6 data-prefix="h6:" > Links and form elements</h6>
-    <form  action="#">
-      <!-- LINK -->
-      <div >
-        <ul>
-          <li class="link">
-            <a href="http://wwww">Links and form elements </a>
-          </li>
-          <li class="link">
-            <a href="http://wwww">Links and form elements </a>
-          </li>
-        </ul>
-      </div class="container">
-      <!-- /LINK -->
-      <!-- INPUT -->
-      <div>
-        <label></label>
-        <input
-          type="text"
-          class=""
-          id="form-text-exampl"
-          placeholder="Text exampl"
-        />
-        <label></label>
-        <input
-          type="text"
-          class=""
-          id="form-text-exampl"
-          placeholder="Text exampl"
-        />
-      </div>
- <!-- /INPUT -->
-      <div class="check-cont" >
-        <!-- CHECK -->
-        
-          <ul class="check radio-position"> 
+
+  <body>
+    <section class="container">
+      <h6 data-prefix="h6:">Links and form elements</h6>
+      <form action="#">
+        <!-- LINK -->
+
+        <div class="centr">
+          <ul centr>
+            <li class="link">
+              <a href="http://wwww">Links and form elements </a>
+            </li>
+            <li class="link">
+              <a href="http://wwww">Links and form elements </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- /LINK -->
+        <!-- INPUT -->
+        <div class="centr">
+          <ul>
+            <li>
+              <label></label>
+              <input
+                type="text"
+                class=""
+                id="form-text"
+                placeholder="Text exampl"
+              />
+            </li>
+            <li>
+              <label></label>
+              <input
+                type="text"
+                class=""
+                id="form-text-exampl"
+                placeholder="Text exampl"
+              />
+            </li>
+          </ul>
+        </div>
+        <!-- /INPUT -->
+        <div class="check-cont centr">
+          <!-- CHECK -->
+
+          <ul class="check radio-position">
             <li class="row">
               <input type="checkbox" name="checkbox" id="default" />
               <label for="default">Default</label>
@@ -68,10 +78,9 @@
               <label for="disabled">Disabled</label>
             </li>
           </ul>
-          
-        
-        <!-- RADIO -->
-        
+
+          <!-- RADIO -->
+
           <ul class="check">
             <li class="row">
               <input type="radio" name="checkbox" id="radio-default" />
@@ -85,24 +94,23 @@
               <input
                 type="radio"
                 name="checkbox"
-                id="disabled"
+                id="disabled-box"
                 disabled="disabled"
               />
-              <label for="disabled">Disabled</label>
+              <label for="disabled-box">Disabled</label>
             </li>
           </ul>
-        
-       
-       
-      </div>
-     
-      <!-- BUTTON -->
-      <div>
-        <button>send</button>
-        <button>send</button>
-      </div>
-      <!-- BUTTON -->
-    </form>
-  </section>
-  <body></body>
+        </div>
+
+        <!-- BUTTON -->
+        <div class="centr">
+          <button>send</button>
+        </div>
+        <div class="centr">
+          <button>send</button>
+        </div>
+        <!-- BUTTON -->
+      </form>
+    </section>
+  </body>
 </html>
