@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Smile_test_v2</title>
+    <title>Links and form elements</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,15 +26,30 @@
             <a href="http://wwww">Lorem ipsum dolor </a>
           </li>
         </ul>
-      </div>
+      </div class="container">
       <!-- /LINK -->
       <!-- INPUT -->
-      <input type="text" />
-      <input type="text" />
-      <div class="check">
+      <div>
+        <label></label>
+        <input
+          type="text"
+          class=""
+          id="form-text-exampl"
+          placeholder="Text exampl"
+        />
+        <label></label>
+        <input
+          type="text"
+          class=""
+          id="form-text-exampl"
+          placeholder="Text exampl"
+        />
+      </div>
+ <!-- /INPUT -->
+      <div class="check-cont" >
         <!-- CHECK -->
-        <div>
-          <ul>
+        
+          <ul class="check"> 
             <li class="row">
               <input type="checkbox" name="checkbox" id="default" />
               <label for="default">Default</label>
@@ -53,10 +68,11 @@
               <label for="disabled">Disabled</label>
             </li>
           </ul>
-        </div>
+          
+        
         <!-- RADIO -->
-        <div class="radio">
-          <ul>
+        
+          <ul class="check">
             <li class="row">
               <input type="radio" name="checkbox" id="radio-default" />
               <label for="radio-default">Default</label>
@@ -75,9 +91,11 @@
               <label for="disabled">Disabled</label>
             </li>
           </ul>
-        </div>
+        
+       
+       
       </div>
-      <!-- /INPUT -->
+     
       <!-- BUTTON -->
       <div>
         <button>send</button>

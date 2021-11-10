@@ -113,7 +113,12 @@ section {
 }
 
 body {
-  line-height: 1;
+  /* line-height: 1; */
+  
+    font-family: Marvel;
+    font-weight: bold;
+    font-size: 24px;
+  
 }
 
 ol,
@@ -204,6 +209,30 @@ a:after {
 .link {
   margin-bottom: 7px;
 }
+/* INPUT */
+input[type = text]{
+  width: 290px;
+  height: 30px;
+  border: none;
+  outline: 0;
+  background-color: red;
+  position: relative;
+  border-bottom: 2px solid #363636;
+}
+input[placeholder]{
+  padding-bottom: 10px;
+}
+/* input:after {
+  content: "";
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid red;
+} */
+/* /INPUT */
+
 /* CHECKED */
 .row {
   margin: 0 0 16px 0;
@@ -262,8 +291,15 @@ input[type="radio"]:checked + label:after {
   transition: opacity 0.3s;
 }
 /* RADIO */
+.check-cont{
+width: 300px;
+margin: 20px 0;
+}
+
 .check {
   display: inline-block;
+width:  47%;
+border: 1px solid red;
 }
 
 input[type="radio"] + label:before {
