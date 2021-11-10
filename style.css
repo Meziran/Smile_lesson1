@@ -114,11 +114,10 @@ section {
 
 body {
   /* line-height: 1; */
-  
-    font-family: Marvel;
-    font-weight: bold;
-    font-size: 24px;
-  
+
+  font-family: Marvel;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 ol,
@@ -167,6 +166,9 @@ button {
   max-width: 300px;
   padding: 0 15px;
 }
+h6[data-prefix="h6"] {
+  margin: 0 0 30px 0;
+}
 /* LINK */
 a {
   height: 29px;
@@ -210,17 +212,17 @@ a:after {
   margin-bottom: 7px;
 }
 /* INPUT */
-input[type = text]{
+input[type="text"] {
   width: 290px;
   height: 30px;
   border: none;
   outline: 0;
-  background-color: red;
+  /* background-color: red; */
   position: relative;
   border-bottom: 2px solid #363636;
+  margin: 30px 0 0 0;
 }
-input[placeholder]{
-  padding-bottom: 10px;
+input[id="form-text-exampl"] {
 }
 /* input:after {
   content: "";
@@ -236,6 +238,9 @@ input[placeholder]{
 /* CHECKED */
 .row {
   margin: 0 0 16px 0;
+}
+.row:last-child {
+  margin-bottom: 0;
 }
 
 input[type="checkbox"],
@@ -260,7 +265,7 @@ input[type="radio"] + label:before {
   background-color: #22f8b9;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 4px;
 }
 
 input[type="checkbox"] + label:after,
@@ -269,7 +274,7 @@ input[type="radio"] + label:after {
   display: block;
   position: absolute;
   left: 5px;
-  top: 0;
+  top: 1px;
   width: 6px;
   height: 6px;
   opacity: 0;
@@ -279,7 +284,7 @@ input[type="radio"] + label:after {
 input[type="checkbox"] + label:after {
   transform: rotate(45deg);
   height: 10px;
-  top: 4px;
+  top: 7px;
   left: 7px;
   border: 2px solid #0000ff;
   border-width: 0 3px 3px 0;
@@ -291,15 +296,19 @@ input[type="radio"]:checked + label:after {
   transition: opacity 0.3s;
 }
 /* RADIO */
-.check-cont{
-width: 300px;
-margin: 20px 0;
+.check-cont {
+  width: 300px;
+  margin: 40px 0 20px 0;
 }
 
 .check {
   display: inline-block;
-width:  47%;
-border: 1px solid red;
+  /* margin-right: auto; */
+  /* border: 1px solid red; */
+}
+
+.radio-position {
+  margin-right: 80px;
 }
 
 input[type="radio"] + label:before {
@@ -316,12 +325,12 @@ input[type="radio"] + label:after {
   width: 8px;
   background: #0000ff;
   left: 6px;
-  top: 6px;
+  top: 10px;
 }
 
 /* BUTTON */
 button {
-  margin-top: 30px;
+  margin-bottom: 15px;
   margin-right: 20px;
   height: 60px;
   width: 290px;
@@ -332,5 +341,12 @@ button {
   text-transform: uppercase;
   line-height: 1.7;
   text-align: center;
-  transition: 250ms;
+  ransition: color 0.3s, background 0.3s;
+}
+
+button:hover,
+button:focus {
+  color: #ffffff;
+  background-color: #0000ff;
+  ransition: color 0.3s, background 0.3s;
 }
