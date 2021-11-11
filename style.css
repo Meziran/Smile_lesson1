@@ -167,6 +167,14 @@ button {
   .container {
     max-width: 768px;
   }
+  a:hover {
+    color: #000;
+    background-color: #e1e1e1;
+    transition: color 0.3s, background 0.3s;
+  }
+  button {
+    width: 130px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
