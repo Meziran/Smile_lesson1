@@ -162,16 +162,13 @@ button {
 
   display: block; 
   margin: 0 auto;
-
   padding: 0 15px;
-  /* border: 1px solid red; */
-}
+  }
 .cont-centr{
   margin: 0 auto;
   /* display: flex; */
   width: 300px;
-  
-}
+  }
 
 /* TITLE */
 h6[data-prefix="h6"] {
@@ -185,6 +182,8 @@ h6:before {
 h6 {
   font: bold 18px/2 "Marvel";
   color: #333333;
+  /* display: flex;
+  justify-content: center; */
 }
 
 /* LINK */
@@ -236,7 +235,7 @@ input[type="text"] {
   height: 40px;
   border: none;
   outline: 0;
-  /* background-color: red; */
+  
   position: relative;
   font: bold 24px/1.5 "Marvel";
   color: #333333;
