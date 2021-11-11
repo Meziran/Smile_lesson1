@@ -148,40 +148,7 @@ button {
 }
 
 /* MEDIA */
-@media screen and (max-width: 479px) {
-  .container {
-    width: 320px;
-  }
-  .centr {
-    width: 300px;
-  }
-}
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .container {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .container {
-    max-width: 768px;
-  }
-  a:hover {
-    color: #000;
-    background-color: #e1e1e1;
-    transition: color 0.3s, background 0.3s;
-  }
-  button {
-    width: 130px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-}
 /* FONT */
 @font-face {
   font-family: "Hipstelvetica";
@@ -192,20 +159,20 @@ button {
 }
 /* CENTR */
 .container {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  display: block; */
+
+  display: block; 
   margin: 0 auto;
 
   padding: 0 15px;
   border: 1px solid red;
 }
-.centr {
-  display: flex;
-  justify-content: center;
-  /* width: 300px; */
+.cont-centr{
+  margin: 0 auto;
+  /* display: flex; */
+  width: 300px;
+  
 }
+
 /* TITLE */
 h6[data-prefix="h6"] {
   margin: 0 0 30px 0;
@@ -234,7 +201,7 @@ a {
 }
 
 /* DEKSTOP */
-/* a:hover {
+a:hover { 
   color: #000;
   background-color: #e1e1e1;
   transition: color 0.3s, background 0.3s;
@@ -279,15 +246,7 @@ input[type="text"] {
 input[id="form-text-exampl"] {
   font: bold 24px/1.5 "Marvel";
 }
-/* input:after {
-  content: "";
-  position: absolute;
 
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-bottom: 1px solid red;
-} */
 /* /INPUT */
 
 /* CHECKED */
