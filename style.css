@@ -402,6 +402,11 @@ button {
   text-align: center;
   transition: color 0.3s, background 0.3s;
 }
+.active-btn{
+  color: #ffffff;
+  background-color: #0000ff;
+  transition: color 0.3s, background 0.3s;
+}
 
 button:hover,
 button:focus {
