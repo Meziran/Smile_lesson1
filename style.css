@@ -164,7 +164,7 @@ button {
   margin: 0 auto;
 
   padding: 0 15px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .cont-centr{
   margin: 0 auto;
